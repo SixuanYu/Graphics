@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Basic Shapes</title>
+  </head>
+	<!--	Create the HTML5 'canvas' element in which we will run WebGL
+	-->
+  <body onload="main()">
+    <canvas id="webgl" width="600" height="600">
+    Please use a browser that supports "canvas"
+    </canvas>
+	<br>
+    	</t> 
+      Welcome! Left is SpongeBob, right is Patrick.<br><br>
+      Drag SpongeBob's Face --> Change Spinning Angle<br>
+           Press Arrow Buttons --> Change Patrick's Position<br>
+	         Click "Run/Stop" --> Run or Stop Spinning<br>
+           Click "Spin>>"	--> Speed Up<br>
+           Click "Spin<<" --> Slow Down<br>
+           Click "Clear" --> Reset<br>		
+	<p>	
+      <button type="button" onclick="spinDown()">Spin << </button>
+	  <button type="button" onclick="runStop()">Run/Stop</button>
+      <button type="button" onclick="spinUp()">Spin >> </button>
+      <button type="button" onClick='clearDrag()'>Clear</button>
+    </p>
+
+	<!--	Load in the JavaScript libraries supplied by our textbook 
+			(Matsuda et al., 2013 WebGL Programming Guide) that help us
+			with WebGL programming:
+	-->
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-mod.js"></script>
+	<!--	Finally, load in our own JavaScript program file.
+	-->
+    <script src="SpongeBob.js"></script>
+  </body>
+</html>
